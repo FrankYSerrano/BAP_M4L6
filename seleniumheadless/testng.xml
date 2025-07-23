@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="HeadlessBrowserSuite" parallel="tests" thread-count="2">
+  <test name="ChromeHeadlessTest">
+    <parameter name="browser" value="chrome" />
+    <classes>
+      <class name="com.frank.selenium.HeadlessTestNG" />
+    </classes>
+  </test>
+
+  <test name="FirefoxHeadlessTest">
+    <parameter name="browser" value="firefox" />
+    <classes>
+      <class name="com.frank.selenium.HeadlessTestNG" />
+    </classes>
+  </test>
+</suite>
