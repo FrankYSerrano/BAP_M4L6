@@ -34,7 +34,7 @@ public class TestHeadless {
 
             driver.get("https://example.com");
 
-            if (driver.getTitle().contains("Example")) {
+            if (driver.getTitle().contains("Examxple")) {
                 System.out.println("XXXXX ===== >>>>" +browser + " loaded the page successfully.");
             } else {
                 System.out.println(browser + " failed to load the expected content.");
