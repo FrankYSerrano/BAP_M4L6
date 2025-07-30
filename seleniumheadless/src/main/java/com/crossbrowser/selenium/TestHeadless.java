@@ -34,10 +34,10 @@ public class TestHeadless {
 
             driver.get("https://example.com");
 
-            if (driver.getTitle().contains("Examxple")) {
-                System.out.println("XXXXX ===== >>>>" +browser + " loaded the page successfully.");
+            if (driver.getTitle().contains("Example")) {
+                System.out.println("CONGRATS =====>>>>" +browser + " loaded the page successfully.");
             } else {
-                System.out.println(browser + " failed to load the expected content.");
+                System.out.println("FAILED ATTEMPT =====>>>>" + browser + " failed to load the expected content.");
             }
 
         } catch (Exception e) {
